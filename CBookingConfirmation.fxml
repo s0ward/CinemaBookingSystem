@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CBookingConfirmationController">
+   <children>
+      <Label fx:id="lblHeaderBookingConfirm" layoutX="158.0" layoutY="14.0" prefHeight="17.0" prefWidth="102.0" text="Booking Summary" />
+      <Button fx:id="btnBackBookingConfirm" layoutX="8.0" layoutY="267.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button fx:id="btnHomeBookingConfirm" layoutX="340.0" layoutY="267.0" mnemonicParsing="false" onAction="#home" text="Home" />
+      <Button fx:id="btnLogoutBookingConfirm" layoutX="182.0" layoutY="267.0" mnemonicParsing="false" onAction="#logOut" text="Logout" />
+      <TableView fx:id="table" layoutY="40.0" prefHeight="200.0" prefWidth="400.0">
+        <columns>
+          <TableColumn fx:id="titleColumn" prefWidth="149.66668701171875" text="Movie Title" />
+          <TableColumn fx:id="timeColumn" prefWidth="87.33331298828125" text="Show Time" />
+            <TableColumn fx:id="dateColumn" prefWidth="88.33331298828125" text="Date" />
+            <TableColumn fx:id="seatColumn" prefWidth="74.0" text="Seat" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

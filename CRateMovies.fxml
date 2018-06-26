@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CRateMoviesController">
+   <children>
+      <AnchorPane prefHeight="300.0" prefWidth="400.0">
+         <children>
+            <Label layoutX="119.0" layoutY="14.0" text="Rate My Movies">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="10.0" layoutY="261.0" mnemonicParsing="false" onAction="#back" text="Back" />
+            <Button fx:id="home" layoutX="345.0" layoutY="261.0" mnemonicParsing="false" onAction="#home" text="Home" />
+            <Button fx:id="btnSubmitRating" layoutX="155.0" layoutY="174.0" mnemonicParsing="false" onAction="#submitRating" text="Submit Rating" />
+            <TextField fx:id="movieTitle" layoutX="31.0" layoutY="73.0" prefHeight="25.0" prefWidth="191.0" promptText="Title" />
+            <TextField fx:id="leaveRating" layoutX="31.0" layoutY="141.0" prefHeight="25.0" prefWidth="92.0" promptText="Rating 0 to 5" />
+            <Label fx:id="lblMovieTitle" layoutX="31.0" layoutY="56.0" text="Title of the Movie to rate" />
+            <Label fx:id="lblLeaveRating" layoutX="31.0" layoutY="122.0" text="Give a Rating of any number from 0 to 5" />
+            <Label fx:id="messageRating" layoutX="90.0" layoutY="221.0" prefHeight="17.0" prefWidth="241.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

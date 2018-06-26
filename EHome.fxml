@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EHomeController">
+   <children>
+      <ComboBox fx:id="movies" layoutX="45.0" layoutY="97.0" onAction="#comboChange" prefHeight="25.0" prefWidth="147.0" promptText="Movies" />
+      <Button fx:id="logoutButton" layoutX="29.0" layoutY="253.0" mnemonicParsing="false" onAction="#logOut" text="Log out" />
+      <Label layoutX="133.0" layoutY="31.0" text="UCL Employee">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="addMovieButton" layoutX="201.0" layoutY="97.0" mnemonicParsing="false" onAction="#addMovie" prefHeight="25.0" prefWidth="147.0" text="Add movie" />
+      <Button fx:id="addPjButton" layoutX="201.0" layoutY="177.0" mnemonicParsing="false" onAction="#addProjection" prefHeight="25.0" prefWidth="147.0" text="Add projection" />
+      <Button fx:id="exportPjButton" layoutX="45.0" layoutY="177.0" mnemonicParsing="false" onAction="#exportProjections" prefHeight="25.0" prefWidth="147.0" text="Export All projections" />
+      <Button fx:id="btnRatings" layoutX="205.0" layoutY="253.0" mnemonicParsing="false" onAction="#seeRatings" prefHeight="25.0" prefWidth="147.0" text="See ratings" />
+      <Label fx:id="export" layoutX="81.0" layoutY="220.0" prefHeight="17.0" prefWidth="234.0" />
+   </children>
+</AnchorPane>

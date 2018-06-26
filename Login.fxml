@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <TextField fx:id="username" layoutX="126.0" layoutY="110.0" promptText="Username" />
+      <PasswordField fx:id="password" layoutX="126.0" layoutY="150.0" promptText="Password" />
+      <Button fx:id="signInButton" layoutX="174.0" layoutY="210.0" mnemonicParsing="false" onAction="#signIn" text="Sign in" />
+      <Hyperlink fx:id="forgot" layoutX="186.0" layoutY="177.0" text="Forgot password?">
+         <font>
+            <Font size="11.0" />
+         </font></Hyperlink>
+      <Label layoutX="111.0" layoutY="256.0" prefHeight="17.0" prefWidth="149.0" text="Don't have an account?">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="signUp" layoutX="224.0" layoutY="254.0" onAction="#signUp" text="Register now">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="141.0" layoutY="37.0" text="UCL Cinema">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="message" layoutX="127.0" layoutY="84.0" prefHeight="17.0" prefWidth="149.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+     
+   </children>
+</AnchorPane>
